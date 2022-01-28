@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="box">
+      <div class="wave one"></div>
+      <div class="wave two"></div>
+      <div class="wave three"></div>
+	</div>
+
+	<div class="box" style="top: -110%;left:130%">
+      <div class="wave one"></div>
+      <div class="wave two"></div>
+      <div class="wave three"></div>
+	</div>
+
+
+	<nav id="menu" class="mx-auto shadow-sm">
+        <div style="height: 54px;width: 1200px;" class="mx-auto d-flex text-center py-2">
+            <a href="index.html">
+                <div style="" class="">
+                    <img src="logo.png" style="height: 54px;width: 54px;margin-top: -8px">
+                </div>
+            </a>
+            <div style="width: 1px;height: 40px;background-color: white;"></div>
+            <a href="index.html" style="text-decoration: none;">
+                <p class="logoP" style="color: white;margin-left: 10px;font-size: 25px">Destiny</p>
+            </a>
+            <div style="height: 40px; width: 90px; margin-left: 450px;" class="pHover">
+                <a href="chat.html" style="text-decoration: none;color: white" target="blank">
+                    
+                </a>
+            </div>
+            <div style="height: 40px;width: 150px;margin-left: 15px" class="pHover">
+                <a href="moreprojects.html" style="text-decoration: none;color: white" target="">
+                    <p style="margin-top: 5px">Все проекты</p>
+                </a>
+            </div>
+
+            <div style="height: 40px;width: 170px;margin-left: 40px;border-radius: 40px;border: 2px solid white;" class="pHover text-center">
+                <a href="newProject.php" style="text-decoration: none;color: white">
+                    <p style="margin-top:3px">Создать проект</p>
+                </a>
+            </div>
+
+           <div class="dropdowns" style="">
+        <button class="btn dropdown-toggle pHover" type="button" id="dropdownMenuButton" style="color: white;font-family: arial;margin-left: 30px;margin-top: -2px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Войти
+        </button>
+        <div class="dropdown-menu py-3 px-3" aria-labelledby="dropdownMenuButton">
+          <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Почта</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Мы никогда не передадим ваши данные.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Пароль</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+          </div>
+          <button type="submit" class="btn gradient-border dva">Подтвердить</button>
+        </form>
+        </div>
+      </div>
+        </div>
+    </nav>
+
+
+
+	<div class="container px-4" style="padding-top: 120px;">
+  <!-- For demo purpose-->
+
+  <div class="row rounded-lg overflow-hidden shadow">
+    <!-- Users box-->
+    <div class="col-5 px-0">
+      <div class="bg-white">
+
+        <div class="bg-gray px-4 py-2 bg-light">
+          <p class="h5 mb-0 py-1">Недавние</p>
+        </div>
+
+        <div class="messages-box">
+          <div class="list-group rounded-0">
+            <a class="list-group-item list-group-item-action active text-white rounded-0" style="background-blend-mode: multiply;
+			background-image: linear-gradient(45deg, #00f674 -50%, #15d5f7 100%);
+background-color: rgba(0, 0, 0, 0.3); border: none;">
+              <div class="media" ><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                <div class="media-body ml-4">
+                  <div class="d-flex align-items-center justify-content-between mb-1" >
+                    <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">25 Dec</small>
+                  </div>
+                  <p class="font-italic mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+              <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                <div class="media-body ml-4">
+                  <div class="d-flex align-items-center justify-content-between mb-1">
+                    <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">14 Dec</small>
+                  </div>
+                  <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur. incididunt ut labore.</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+              <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                <div class="media-body ml-4">
+                  <div class="d-flex align-items-center justify-content-between mb-1">
+                    <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">9 Nov</small>
+                  </div>
+                  <p class="font-italic text-muted mb-0 text-small">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+              <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                <div class="media-body ml-4">
+                  <div class="d-flex align-items-center justify-content-between mb-1">
+                    <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">18 Oct</small>
+                  </div>
+                  <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+              <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                <div class="media-body ml-4">
+                  <div class="d-flex align-items-center justify-content-between mb-1">
+                    <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">17 Oct</small>
+                  </div>
+                  <p class="font-italic text-muted mb-0 text-small">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+              <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                <div class="media-body ml-4">
+                  <div class="d-flex align-items-center justify-content-between mb-1">
+                    <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">2 Sep</small>
+                  </div>
+                  <p class="font-italic text-muted mb-0 text-small">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+              <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                <div class="media-body ml-4">
+                  <div class="d-flex align-items-center justify-content-between mb-1">
+                    <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">30 Aug</small>
+                  </div>
+                  <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+              <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                <div class="media-body ml-4">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">21 Aug</small>
+                  </div>
+                  <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Chat Box-->
+    <div class="col-7 px-0">
+      <div class="px-4 py-5 chat-box bg-white">
+        <!-- Sender Message-->
+        <div class="media w-50 mb-3"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle" >
+          <div class="media-body ml-3" >
+            <div class="bg-light rounded py-2 px-3 mb-2">
+              <p class="text-small mb-0 text-muted">Test which is a new approach all solutions</p>
+            </div>
+            <p class="small text-muted">12:00 PM | Aug 13</p>
+          </div>
+        </div>
+
+        <!-- Reciever Message-->
+        <div class="media w-50 ml-auto mb-3">
+          <div class="media-body" >
+            <div class=" rounded py-2 px-3 mb-2" style="background-blend-mode: multiply;
+			background-image: linear-gradient(45deg, #00f674 -50%, #15d5f7 100%);
+background-color: rgba(0, 0, 0, 0.3); border: none;">
+              <p class="text-small mb-0 text-white">Test which is a new approach to have all solutions</p>
+            </div>
+            <p class="small text-muted">12:00 PM | Aug 13</p>
+          </div>
+        </div>
+
+        <!-- Sender Message-->
+        <div class="media w-50 mb-3"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+          <div class="media-body ml-3">
+            <div class="bg-light rounded py-2 px-3 mb-2">
+              <p class="text-small mb-0 text-muted">Test, which is a new approach to have</p>
+            </div>
+            <p class="small text-muted">12:00 PM | Aug 13</p>
+          </div>
+        </div>
+
+        <!-- Reciever Message-->
+        <div class="media w-50 ml-auto mb-3">
+          <div class="media-body">
+            <div class="rounded py-2 px-3 mb-2" style="background-blend-mode: multiply;
+			background-image: linear-gradient(45deg, #00f674 -50%, #15d5f7 100%);
+background-color: rgba(0, 0, 0, 0.3); border: none;">
+              <p class="text-small mb-0 text-white">Apollo University, Delhi, India Test</p>
+            </div>
+            <p class="small text-muted">12:00 PM | Aug 13</p>
+          </div>
+        </div>
+
+        <!-- Sender Message-->
+        <div class="media w-50 mb-3"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+          <div class="media-body ml-3">
+            <div class="bg-light rounded py-2 px-3 mb-2">
+              <p class="text-small mb-0 text-muted">Test, which is a new approach</p>
+            </div>
+            <p class="small text-muted">12:00 PM | Aug 13</p>
+          </div>
+        </div>
+
+        <!-- Reciever Message-->
+        <div class="media w-50 ml-auto mb-3">
+          <div class="media-body">
+            <div class="rounded py-2 px-3 mb-2" style="background-blend-mode: multiply;
+      background-image: linear-gradient(45deg, #00f674 -50%, #15d5f7 100%);
+background-color: rgba(0, 0, 0, 0.3); border: none;">
+              <p class="text-small mb-0 text-white">Apollo University, Delhi, India Test</p>
+            </div>
+            <p class="small text-muted">12:00 PM | Aug 13</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Typing area -->
+      <form action="#" class="bg-light">
+        <div class="input-group">
+          <input type="text" placeholder="Type a message" aria-describedby="button-addon2" class="form-control rounded-0 border-0 py-4 bg-light">
+          <div class="input-group-append">
+            <button id="button-addon2" type="submit" class="btn btn-link"> <i class="fa fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
+	<section class="main3">
+			<div class="footerDiv">
+				<div class="footerBox">
+        <div class="footerLine"></div>
+        <div class="footerText px-4 py-2">
+          <div class="py-5 px-5">
+            <p class="footerTextP text-center">ул. Пушкина 23 г.Якутск 677000</p>
+            <p class="footerTextP text-center">destinympit2020@example.com</p>
+            <p class="footerTextP text-center">+79247642274</p>
+          </div>
+        </div>
+        <div class="footerLine"></div>
+        <div class="footerTeamDiv px-4 py-3">
+          <div class="footerTeamBox">
+            <div class="footerPhoto" style="background-image: url(timur.png);"></div>
+            <div class="footerName"><p class="footerNameP">Дизайнер - Блахиров Тимур</p></div>
+          </div>
+          <div class="footerTeamBox">
+            <div class="footerPhoto" style="background-image: url(10.png);"></div>
+            <div class="footerName"><p class="footerNameP">Менеджер - Корнилова Юлиана</p></div>
+          </div>
+          <div class="footerTeamBox">
+            <div class="footerPhoto" style="background-image: url(9.png);"></div>
+            <div class="footerName"><p class="footerNameP">Программист - Никулин Максим</p></div>
+          </div>
+        </div>
+      </div>
+			</div>
+		</section>
+
+    <a href="#" class="back-to-top text-center" >
+    <div style="background-color: rgba(200,162,200,0.7);border-radius:50%;width: 50px;height: 50px;position: fixed;left: 95%;top: 93%;overflow: hidden;" class="gradient-border shadow-sm">
+      <div style="width: 50px;height: 50px;background-image: url(25223.png); background-size: 100% 100%;background-repeat: no-repeat;"></div>
+    </div>
+  </a>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+    </script>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
